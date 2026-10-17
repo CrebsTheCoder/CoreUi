@@ -1,0 +1,13 @@
+{
+  "providers": [
+    {
+      "ascent": 384,
+      "height": 384,
+      "type": "bitmap",
+      "file": "coreui:glyphs/bounds.png",
+      "chars": [
+        "\ue20e"
+      ]
+    }
+  ]
+}

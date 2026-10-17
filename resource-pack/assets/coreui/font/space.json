@@ -1,0 +1,5 @@
+{
+  "providers": [
+    { "type": "space", "advances": { "\uE100": 1, "\uE101": -1 } }
+  ]
+}

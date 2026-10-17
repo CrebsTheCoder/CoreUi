@@ -1,0 +1,13 @@
+name: CoreUi
+version: '${version}'
+main: org.crebs.coreUi.CoreUi
+api-version: '26.3'
+load: POSTWORLD
+commands:
+  coreui:
+    description: Opens CoreUI
+    usage: /coreui
+    permission: coreui.test
+permissions:
+  coreui.test:
+    default: op
