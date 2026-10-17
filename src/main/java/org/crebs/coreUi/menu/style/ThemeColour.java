@@ -1,4 +1,4 @@
-package org.crebs.coreUi.menu.enums;
+package org.crebs.coreUi.menu.style;
 
 public enum ThemeColour {
     LIGHT(0xC6C6C6, 0xFFFFFF),

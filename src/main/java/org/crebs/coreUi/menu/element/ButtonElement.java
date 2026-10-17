@@ -7,17 +7,17 @@ import java.util.HashSet;
 import java.util.function.Consumer;
 
 public record ButtonElement(ElementProperties properties, String targetPage, List<String> resetValues, Consumer<Player> onClick,
-                            org.crebs.coreUi.menu.enums.ButtonStyle style, boolean enabled, boolean selected) implements MenuElement {
+                            org.crebs.coreUi.menu.style.ButtonStyle style, boolean enabled, boolean selected) implements MenuElement {
 
     public ButtonElement(ElementProperties properties, String targetPage, List<String> resetValues, Consumer<Player> onClick) {
-        this(properties, targetPage, resetValues, onClick, org.crebs.coreUi.menu.enums.ButtonStyle.DEFAULT, true, false);
+        this(properties, targetPage, resetValues, onClick, org.crebs.coreUi.menu.style.ButtonStyle.DEFAULT, true, false);
     }
 
     public ButtonElement {
         Objects.requireNonNull(properties);
         Objects.requireNonNull(onClick, "onClick");
         Objects.requireNonNull(style, "style");
-        if (style == org.crebs.coreUi.menu.enums.ButtonStyle.TAB && targetPage == null) {
+        if (style == org.crebs.coreUi.menu.style.ButtonStyle.TAB && targetPage == null) {
             throw new IllegalArgumentException("Tabs require a target page");
         }
 

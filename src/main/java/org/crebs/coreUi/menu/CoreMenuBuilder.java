@@ -3,8 +3,8 @@ package org.crebs.coreUi.menu;
 import net.kyori.adventure.text.Component;
 import org.bukkit.entity.Player;
 import org.crebs.coreUi.menu.element.*;
-import org.crebs.coreUi.menu.enums.ThemeColour;
-import org.crebs.coreUi.menu.enums.ButtonStyle;
+import org.crebs.coreUi.menu.style.ThemeColour;
+import org.crebs.coreUi.menu.style.ButtonStyle;
 import java.util.*;
 import java.util.function.*;
 

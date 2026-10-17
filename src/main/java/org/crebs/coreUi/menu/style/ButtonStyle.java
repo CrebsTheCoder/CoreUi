@@ -1,3 +1,3 @@
-package org.crebs.coreUi.menu.enums;
+package org.crebs.coreUi.menu.style;
 
 public enum ButtonStyle { DEFAULT, PRIMARY, TAB }

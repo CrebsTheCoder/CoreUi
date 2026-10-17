@@ -5,7 +5,7 @@ import org.bukkit.entity.Player;
 import org.crebs.coreUi.menu.CoreMenu;
 import org.crebs.coreUi.menu.Metrics;
 import org.crebs.coreUi.menu.element.*;
-import org.crebs.coreUi.menu.enums.ThemeColour;
+import org.crebs.coreUi.menu.style.ThemeColour;
 import java.util.*;
 import java.util.function.Consumer;
 

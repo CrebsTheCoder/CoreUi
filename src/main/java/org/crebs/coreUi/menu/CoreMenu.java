@@ -1,7 +1,7 @@
 package org.crebs.coreUi.menu;
 
 import net.kyori.adventure.text.Component;
-import org.crebs.coreUi.menu.enums.ThemeColour;
+import org.crebs.coreUi.menu.style.ThemeColour;
 import org.crebs.coreUi.menu.element.MenuElement;
 import java.util.List;
 

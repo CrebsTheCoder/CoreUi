@@ -1,11 +1,10 @@
 package org.crebs.coreUi.menu.demo;
 
 import net.kyori.adventure.text.Component;
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.crebs.coreUi.CoreUi;
 import org.crebs.coreUi.menu.CoreMenu;
-import org.crebs.coreUi.menu.enums.ThemeColour;
+import org.crebs.coreUi.menu.style.ThemeColour;
 
 public final class TestMenu {
     public static CoreMenu create(CoreUi plugin, Player player) {

@@ -6,7 +6,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.crebs.coreUi.menu.CoreMenu;
 import org.crebs.coreUi.menu.demo.TestMenu;
-import org.crebs.coreUi.menu.enums.ThemeColour;
+import org.crebs.coreUi.menu.style.ThemeColour;
 import org.crebs.coreUi.menu.element.DropdownElement;
 import org.crebs.coreUi.menu.listener.MenuListener;
 import org.crebs.coreUi.menu.render.MenuRenderer;
