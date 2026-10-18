@@ -1,6 +1,6 @@
 name: CoreUi
 version: '${version}'
-main: org.crebs.coreUi.CoreUi
+main: org.crebs.coreui.CoreUi
 api-version: '26.3'
 load: POSTWORLD
 commands:
