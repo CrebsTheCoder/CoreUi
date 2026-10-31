@@ -36,7 +36,13 @@ Create menus with buttons, toggles, sliders, dropdowns and custom images using a
 | Java | **21+** |
 
 ---
+
 ## Example
+
+<img width="1333" height="872" alt="CoreUi menu example" src="https://github.com/user-attachments/assets/2924085e-00d4-43c9-b841-392f04737c4b" />
+
+<details>
+<summary><strong>View example</strong></summary>
 
 ```java
 import org.bukkit.entity.Player;
@@ -90,7 +96,8 @@ Install the CoreUi plugin JAR in your server's `plugins` folder. Depend on its A
 
 ### Gradle
 
-Add this to your plugin's `build.gradle.kts`. 
+Add this to your plugin's `build.gradle.kts`.
+
 ```kotlin
 repositories {
     maven("https://jitpack.io")
