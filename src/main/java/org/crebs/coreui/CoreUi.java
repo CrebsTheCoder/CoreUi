@@ -5,7 +5,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.crebs.coreui.menu.CoreMenu;
-import org.crebs.coreui.menu.demo.TestMenu;
 import org.crebs.coreui.menu.style.ThemeColour;
 import org.crebs.coreui.menu.element.DropdownElement;
 import org.crebs.coreui.menu.listener.MenuListener;
@@ -13,27 +12,54 @@ import org.crebs.coreui.menu.render.MenuRenderer;
 import org.crebs.coreui.menu.session.MenuSession;
 import org.crebs.coreui.menu.session.MenuValues;
 import java.util.*;
+import org.crebs.coreui.glyph.GlyphManager;
+import java.util.concurrent.CompletableFuture;
+import java.nio.file.Path;
 
 public final class CoreUi extends JavaPlugin {
     private final Map<UUID, MenuSession> sessions = new HashMap<>();
     private final Map<UUID, ThemeColour> themes = new HashMap<>();
     private final Map<UUID, Map<String, MenuValues>> rememberedValues = new HashMap<>();
     private final MenuRenderer renderer = new MenuRenderer();
+    private GlyphManager glyphs;
+
+    public GlyphManager getGlyphs() {
+        return Objects.requireNonNull(glyphs, "CoreUi is not enabled");
+    }
+
+    public CompletableFuture<Path> reloadPack() {
+        return getGlyphs().reload();
+    }
 
     @Override
     public void onEnable() {
+        glyphs = new GlyphManager(getDataFolder().toPath(), getFile().toPath());
+        reloadPack().whenComplete((path, error) -> {
+            if (error == null) getLogger().info("Resource pack generated: " + path);
+            else getLogger().log(java.util.logging.Level.SEVERE, "Resource pack generation failed", error);
+        });
         getServer().getPluginManager().registerEvents(new MenuListener(this), this);
         getLogger().info("CoreUI menus online");
         Objects.requireNonNull(getCommand("coreui")).setExecutor((sender, command, label, args) -> {
-            if (!(sender instanceof Player player)) {
-                sender.sendMessage("Only players can open menus");
+            if (args.length == 1 && args[0].equalsIgnoreCase("reload")) {
+                if (!sender.hasPermission("coreui.reload")) {
+                    sender.sendMessage("You do not have permission to reload CoreUi");
+                    return true;
+                }
+                sender.sendMessage("Rebuilding CoreUi resource pack...");
+                reloadPack().whenComplete((path, error) -> {
+                    if (!isEnabled()) return;
+                    getServer().getScheduler().runTask(this, () -> {
+                        if (error == null) sender.sendMessage("Loaded " + glyphs.all().size() + " glyphs. Pack: " + path);
+                        else {
+                            sender.sendMessage("Pack rebuild failed. Check the console for details");
+                            getLogger().log(java.util.logging.Level.SEVERE, "Resource pack generation failed", error);
+                        }
+                    });
+                });
                 return true;
             }
-            if (args.length > 0) {
-                sender.sendMessage("Usage: /coreui");
-                return true;
-            }
-            openLanding(player);
+            sender.sendMessage("Usage: /coreui reload");
             return true;
         });
         getServer().getScheduler().runTaskTimer(this, () -> {
@@ -59,10 +85,6 @@ public final class CoreUi extends JavaPlugin {
         MenuSession session = new MenuSession(menu, saved);
         sessions.put(player.getUniqueId(), session);
         draw(player, session);
-    }
-
-    public void openLanding(Player player) {
-        open(player, TestMenu.create(this, player));
     }
 
     public Optional<MenuSession> getSession(Player player) {

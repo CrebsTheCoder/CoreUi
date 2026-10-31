@@ -1,0 +1,31 @@
+{
+  "pack": {
+    "min_format": 75,
+    "max_format": [97, 1],
+    "description": "CoreUI resource pack"
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "coreui_1_21_11",
+        "min_format": 75,
+        "max_format": 83
+      },
+      {
+        "directory": "coreui_26_1",
+        "min_format": 84,
+        "max_format": 87
+      },
+      {
+        "directory": "coreui_26_2",
+        "min_format": 88,
+        "max_format": 96
+      },
+      {
+        "directory": "coreui_26_3",
+        "min_format": 97,
+        "max_format": [97, 1]
+      }
+    ]
+  }
+}

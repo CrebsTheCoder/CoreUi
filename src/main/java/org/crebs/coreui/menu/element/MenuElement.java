@@ -1,6 +1,6 @@
 package org.crebs.coreui.menu.element;
 
-public sealed interface MenuElement permits LabelElement, ButtonElement, ToggleElement, SliderElement, DropdownElement, PanelElement, DisplayElement {
+public sealed interface MenuElement permits LabelElement, ButtonElement, ToggleElement, SliderElement, DropdownElement, PanelElement, DisplayElement, GlyphElement {
 
     ElementProperties properties();
 

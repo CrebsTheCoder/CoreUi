@@ -1,0 +1,1401 @@
+{
+  "providers": [
+    {
+      "type": "space",
+      "advances": {
+        " ": 4
+      }
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/text.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "\u0000!\"#$%&'()*+,-./",
+        "0123456789:;<=>?",
+        "@ABCDEFGHIJKLMNO",
+        "PQRSTUVWXYZ[\\]^_",
+        "`abcdefghijklmno",
+        "pqrstuvwxyz{|}~\u0000",
+        "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/panel_dark.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/panel_light.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/header_dark.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/header_light.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/row_dark.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/row_light.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/row_pressed_dark.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/row_pressed_light.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/row_disabled_dark.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/row_disabled_light.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/button.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/button_pressed.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/button_disabled_dark.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/button_disabled_light.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/primary_dark.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/primary_light.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/primary_pressed.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/tab_dark.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/tab_light.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/tab_pressed_dark.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/tab_pressed_light.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/tab_selected_dark.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/tab_selected_light.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/selection_stripe.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/toggle_on.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/toggle_off.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/toggle_disabled.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/slider_track.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/slider_track_disabled.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/slider_fill_dark.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/slider_fill_light.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/dropdown.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/dropdown_pressed.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/dropdown_option.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/dropdown_option_selected.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/dropdown_option_pressed.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/focus.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/divider.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/badge.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/progress_track.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/progress_fill.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/dropdown_option_light.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/dropdown_option_selected_light.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/dropdown_option_pressed_light.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/toggle_knob.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/toggle_knob_pressed.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/toggle_knob_disabled.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/slider_knob.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/slider_knob_pressed.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/slider_knob_disabled.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/toggle_knob_focused.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/slider_knob_focused.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/arrow_down.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/arrow_up.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/checkbox_checked.png",
+      "height": 16,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/checkbox_unchecked.png",
+      "height": 16,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/checkbox_checked_pressed.png",
+      "height": 16,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/checkbox_unchecked_pressed.png",
+      "height": 16,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/checkbox_checked_disabled.png",
+      "height": 16,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/checkbox_unchecked_disabled.png",
+      "height": 16,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/close_dark.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/close_light.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/toggle_on_indicator.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/toggle_off_indicator.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/toggle_on_indicator_disabled.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/toggle_off_indicator_disabled.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/row_arrow.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_1.png",
+      "height": 1,
+      "ascent": 1,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_2.png",
+      "height": 2,
+      "ascent": 2,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_3.png",
+      "height": 3,
+      "ascent": 3,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_4.png",
+      "height": 4,
+      "ascent": 4,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_5.png",
+      "height": 5,
+      "ascent": 5,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_6.png",
+      "height": 6,
+      "ascent": 6,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_7.png",
+      "height": 7,
+      "ascent": 7,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_8.png",
+      "height": 8,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_9.png",
+      "height": 9,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_1.png",
+      "height": 1,
+      "ascent": 0,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_2.png",
+      "height": 2,
+      "ascent": 1,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_3.png",
+      "height": 3,
+      "ascent": 2,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_4.png",
+      "height": 4,
+      "ascent": 3,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_5.png",
+      "height": 5,
+      "ascent": 4,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_6.png",
+      "height": 6,
+      "ascent": 5,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_7.png",
+      "height": 7,
+      "ascent": 6,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_8.png",
+      "height": 8,
+      "ascent": 7,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_9.png",
+      "height": 9,
+      "ascent": 7,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_1.png",
+      "height": 1,
+      "ascent": -1,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_2.png",
+      "height": 2,
+      "ascent": 0,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_3.png",
+      "height": 3,
+      "ascent": 1,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_4.png",
+      "height": 4,
+      "ascent": 2,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_5.png",
+      "height": 5,
+      "ascent": 3,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_6.png",
+      "height": 6,
+      "ascent": 4,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_7.png",
+      "height": 7,
+      "ascent": 5,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_8.png",
+      "height": 8,
+      "ascent": 6,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_9.png",
+      "height": 9,
+      "ascent": 6,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_1.png",
+      "height": 1,
+      "ascent": -2,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_2.png",
+      "height": 2,
+      "ascent": -1,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_3.png",
+      "height": 3,
+      "ascent": 0,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_4.png",
+      "height": 4,
+      "ascent": 1,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_5.png",
+      "height": 5,
+      "ascent": 2,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_6.png",
+      "height": 6,
+      "ascent": 3,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_7.png",
+      "height": 7,
+      "ascent": 4,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_8.png",
+      "height": 8,
+      "ascent": 5,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_9.png",
+      "height": 9,
+      "ascent": 5,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_1.png",
+      "height": 1,
+      "ascent": -3,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_2.png",
+      "height": 2,
+      "ascent": -2,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_3.png",
+      "height": 3,
+      "ascent": -1,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_4.png",
+      "height": 4,
+      "ascent": 0,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_5.png",
+      "height": 5,
+      "ascent": 1,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_6.png",
+      "height": 6,
+      "ascent": 2,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_7.png",
+      "height": 7,
+      "ascent": 3,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_8.png",
+      "height": 8,
+      "ascent": 4,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_9.png",
+      "height": 9,
+      "ascent": 4,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_1.png",
+      "height": 1,
+      "ascent": -4,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_2.png",
+      "height": 2,
+      "ascent": -3,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_3.png",
+      "height": 3,
+      "ascent": -2,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_4.png",
+      "height": 4,
+      "ascent": -1,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_5.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_6.png",
+      "height": 6,
+      "ascent": 1,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_7.png",
+      "height": 7,
+      "ascent": 2,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_8.png",
+      "height": 8,
+      "ascent": 3,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_9.png",
+      "height": 9,
+      "ascent": 3,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_1.png",
+      "height": 1,
+      "ascent": -5,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_2.png",
+      "height": 2,
+      "ascent": -4,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_3.png",
+      "height": 3,
+      "ascent": -3,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_4.png",
+      "height": 4,
+      "ascent": -2,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_5.png",
+      "height": 5,
+      "ascent": -1,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_6.png",
+      "height": 6,
+      "ascent": 0,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_7.png",
+      "height": 7,
+      "ascent": 1,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_8.png",
+      "height": 8,
+      "ascent": 2,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_9.png",
+      "height": 9,
+      "ascent": 2,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_1.png",
+      "height": 1,
+      "ascent": -6,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_2.png",
+      "height": 2,
+      "ascent": -5,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_3.png",
+      "height": 3,
+      "ascent": -4,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_4.png",
+      "height": 4,
+      "ascent": -3,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_5.png",
+      "height": 5,
+      "ascent": -2,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_6.png",
+      "height": 6,
+      "ascent": -1,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_7.png",
+      "height": 7,
+      "ascent": 0,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_8.png",
+      "height": 8,
+      "ascent": 1,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_9.png",
+      "height": 9,
+      "ascent": 1,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_1.png",
+      "height": 1,
+      "ascent": -7,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_2.png",
+      "height": 2,
+      "ascent": -6,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_3.png",
+      "height": 3,
+      "ascent": -5,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_4.png",
+      "height": 4,
+      "ascent": -4,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_5.png",
+      "height": 5,
+      "ascent": -3,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_6.png",
+      "height": 6,
+      "ascent": -2,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_7.png",
+      "height": 7,
+      "ascent": -1,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_8.png",
+      "height": 8,
+      "ascent": 0,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "coreui:glyphs/hits_9.png",
+      "height": 9,
+      "ascent": 0,
+      "chars": [
+        ""
+      ]
+    }
+  ]
+}

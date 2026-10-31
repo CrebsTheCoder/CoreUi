@@ -54,7 +54,7 @@ public final class MenuRenderer {
     private final List<HitBox> hitBoxes = new ArrayList<>();
     private final Map<String, Bounds> focusBounds = new HashMap<>();
     private MenuSession session;
-    private String font;
+    private static final Key FONT = Key.key("coreui", "glyphs");
     private boolean dark;
     private int foreground;
     private int secondary;
@@ -84,7 +84,6 @@ public final class MenuRenderer {
         frame.session = Objects.requireNonNull(session);
         session.renderTick(tick);
         frame.dark = session.getTheme() == ThemeColour.DARK;
-        frame.font = "glyphs_" + (frame.dark ? "dark_" : "light_");
         frame.foreground = frame.dark ? 0xF0F0F0 : 0x252826;
         frame.secondary = frame.dark ? 0xB5B9B6 : 0x575D59;
         return frame.draw();
@@ -116,6 +115,11 @@ public final class MenuRenderer {
                 continue;
             }
             switch (element) {
+                case GlyphElement image -> {
+                    var glyph = image.glyph();
+                    int y = image.bounds().y() + contentTop() + glyph.ascent() - 8;
+                    placeAtLine(image.bounds().x(), Math.floorDiv(y, 9), glyph.component(Math.floorMod(y, 9)), glyph.advance(), null);
+                }
                 case LabelElement label -> label(label.bounds().x(), label.bounds().y(), label.properties().label(), secondary, null);
                 case ButtonElement button -> button(button);
                 case ToggleElement toggle -> toggle(toggle);
@@ -301,8 +305,9 @@ public final class MenuRenderer {
                 : focused ? (slider ? 7 : 6) : (slider ? 3 : 0);
         long start = Math.floorMod(motion == null ? session.getRenderTick() - 4 : motion.tick(), 24000L);
         int distance = motion == null ? 0 : motion.dx();
-        int argb = (17 + palette) << 24 | (int) (start & 255) << 16 | (int) (start >> 8) << 8 | (distance + 128);
-        place(x, y, Component.text(String.valueOf((char) ('\uE260' + palette)))
+        int offset = Math.floorMod(y + contentTop(), 9);
+        int argb = (17 + palette + offset * 8) << 24 | (int) (start & 255) << 16 | (int) (start >> 8) << 8 | (distance + 128);
+        placeAtLine(x, Math.floorDiv(y + contentTop(), 9), Component.text(String.valueOf((char) ('\uE260' + palette)))
                 .shadowColor(ShadowColor.shadowColor(argb)), QUAD_ADVANCE, null);
     }
 
@@ -427,18 +432,20 @@ public final class MenuRenderer {
             for (Bounds b : hit.header() || hit.popup() || popupArea == null ? List.of(hit.bounds()) : subtract(hit.bounds(), popupArea)) {
             for (int y = 0; y < b.height(); y += 9) {
                 int height = Math.min(9, b.height() - y);
+                int baselineAdjustment = height == 9 ? 0 : 8 - height;
+                int baseline = b.y() + y - baselineAdjustment + contentTop();
+                int offset = Math.floorMod(baseline, 9);
                 Component content = Component.empty();
                 int remaining = b.width();
                 for (int bit = 7; bit >= 0; bit--) {
                     int span = 1 << bit;
                     while (remaining >= span) {
-                        int code = height == 9 ? 0xE280 + bit : 0xE500 + (height - 1) * 8 + bit;
+                        int code = 0xF200 + offset * 72 + (height - 1) * 8 + bit;
                         content = content.append(Component.text(String.valueOf((char) code))).append(space(-1));
                         remaining -= span;
                     }
                 }
-                int baselineAdjustment = height == 9 ? 0 : 8 - height;
-                place(b.x(), b.y() + y - baselineAdjustment, content, b.width(), hit.click());
+                placeAtLine(b.x(), Math.floorDiv(baseline, 9), content, b.width(), hit.click());
             }
             }
         }
@@ -479,19 +486,20 @@ public final class MenuRenderer {
 
     private void place(int x, int y, Component content, int fontAdvance, Key click) {
         y += contentTop();
-        content = content.font(Key.key("coreui", font + y % 9));
+        content = TextPosition.encode(content, Math.floorMod(y, 9));
+        content = Component.empty().font(FONT).append(content);
         int left = (480 - session.getMenu().getWidth()) / 2 + x;
-        rows.merge(y / 9, space(left).append(withClick(content, click)).append(space(-left - fontAdvance)), Component::append);
+        rows.merge(Math.floorDiv(y, 9), space(left).append(withClick(content, click)).append(space(-left - fontAdvance)), Component::append);
     }
 
     private void placeAtLine(int x, int line, Component content, int fontAdvance, Key click) {
-        content = content.font(Key.key("coreui", font + "0"));
+        content = Component.empty().font(FONT).append(content);
         int left = (480 - session.getMenu().getWidth()) / 2 + x;
         rows.merge(line, space(left).append(withClick(content, click)).append(space(-left - fontAdvance)), Component::append);
     }
 
     private static Component withClick(Component content, Key click) {
-        return click == null ? content : content.clickEvent(ClickEvent.custom(click, null));
+        return click == null ? content : content.clickEvent(ClickEvent.custom(click, net.kyori.adventure.nbt.api.BinaryTagHolder.binaryTagHolder("{}")));
     }
 
     private static Component space(int pixels) {

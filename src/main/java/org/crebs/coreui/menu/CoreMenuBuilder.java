@@ -1,6 +1,7 @@
 package org.crebs.coreui.menu;
 
 import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.entity.Player;
 import org.crebs.coreui.menu.element.*;
 import org.crebs.coreui.menu.style.ThemeColour;
@@ -28,9 +29,31 @@ public final class CoreMenuBuilder {
         this.id = id;
     }
 
+    public GlyphBuilder glyph(String id, org.crebs.coreui.glyph.Glyph glyph) {
+        return new GlyphBuilder(id, glyph);
+    }
+
+    public final class GlyphBuilder extends ElementBuilder<GlyphBuilder> {
+        private final org.crebs.coreui.glyph.Glyph glyph;
+
+        private GlyphBuilder(String id, org.crebs.coreui.glyph.Glyph glyph) {
+            super(id);
+            this.glyph = Objects.requireNonNull(glyph);
+            width = Math.max(1, glyph.width());
+            height = glyph.height();
+        }
+
+        protected GlyphBuilder self() { return this; }
+        protected MenuElement create() { return new GlyphElement(properties(), glyph); }
+    }
+
     public CoreMenuBuilder title(Component value) {
         title = Objects.requireNonNull(value);
         return this;
+    }
+
+    public CoreMenuBuilder title(String value) {
+        return title(MiniMessage.miniMessage().deserialize(value));
     }
 
     public CoreMenuBuilder theme(ThemeColour value) {
@@ -47,6 +70,10 @@ public final class CoreMenuBuilder {
         headerEnabled = true;
         header = Objects.requireNonNull(value);
         return this;
+    }
+
+    public CoreMenuBuilder header(String value) {
+        return header(MiniMessage.miniMessage().deserialize(value));
     }
 
     public CoreMenuBuilder rememberValues() {
@@ -82,6 +109,10 @@ public final class CoreMenuBuilder {
 
     public LabelBuilder label(String id, Component text) {
         return new LabelBuilder(id).label(text);
+    }
+
+    public LabelBuilder label(String id, String text) {
+        return label(id, MiniMessage.miniMessage().deserialize(text));
     }
 
     public ButtonBuilder button(String id) {
@@ -191,9 +222,17 @@ public final class CoreMenuBuilder {
             return self();
         }
 
+        public B label(String value) {
+            return label(MiniMessage.miniMessage().deserialize(value));
+        }
+
         public B description(Component value) {
             description = Objects.requireNonNull(value);
             return self();
+        }
+
+        public B description(String value) {
+            return description(MiniMessage.miniMessage().deserialize(value));
         }
 
         protected int resolvedWidth() {
@@ -315,6 +354,7 @@ public final class CoreMenuBuilder {
         private boolean checkbox;
         private Component indicatorLabel = Component.empty();
         public ToggleBuilder indicatorLabel(Component value) { indicatorLabel = Objects.requireNonNull(value); return this; }
+        public ToggleBuilder indicatorLabel(String value) { return indicatorLabel(MiniMessage.miniMessage().deserialize(value)); }
         private boolean enabled = true;
         public ToggleBuilder checkbox() { checkbox = true; return this; }
         public ToggleBuilder disabled() { enabled = false; return this; }
