@@ -19,9 +19,6 @@ public class TtfUnicodeProvider extends AbstractUnicodeProvider {
     @JsonProperty("file")
     public final String file;
 
-    @JsonProperty("chars")
-    public final ArrayList<String> chars;
-
     @JsonProperty("skip")
     public final ArrayList<String> skip = new ArrayList<String>();
 
@@ -37,8 +34,6 @@ public class TtfUnicodeProvider extends AbstractUnicodeProvider {
         this.size = size;
         this. oversample =  oversample;
         this.file = namespacedTexturePath;
-        chars = new ArrayList<String>();
-        chars.add(String.valueOf(unicodeChar));
 
     }
 
