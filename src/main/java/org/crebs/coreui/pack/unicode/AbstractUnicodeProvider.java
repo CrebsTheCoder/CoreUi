@@ -6,6 +6,7 @@ import net.outmoded.packer.JsonTemplate;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
+import java.util.Locale;
 
 public abstract class AbstractUnicodeProvider implements UnicodeProviderInterface, JsonTemplate {
 
@@ -16,7 +17,7 @@ public abstract class AbstractUnicodeProvider implements UnicodeProviderInterfac
 
     @JsonIgnore
     public AbstractUnicodeProvider(UnicodeType type){
-        this.type = String.valueOf(type).toLowerCase();
+        this.type = String.valueOf(type).toLowerCase(Locale.ROOT);
     }
 
     public enum FilterType{
