@@ -18,7 +18,7 @@ public class UnicodeFileRegister implements JsonTemplate {
     private final String fullWritePath;
 
     /**
-     * Refer to <a href="https://minecraft.wiki/w/Resource_pack#Fonts">...</a> for more info
+     * Refer to <a href="https://minecraft.wiki/w/Font_definition">...</a> for more info
      * @param namespacedWritePath should be "namespace:folder/custom.json"
      *
      */
