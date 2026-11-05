@@ -11,7 +11,7 @@ public class ReferenceUnicodeProvider extends AbstractUnicodeProvider {
     public final String id;
 
     /**
-     * Refer to https://minecraft.wiki/w/Resource_pack#Fonts for more info
+     * Refer to https://minecraft.wiki/w/Font_definition for more info
      */
     public ReferenceUnicodeProvider(String namespacedIdToFont){
         super(UnicodeType.REFERENCE);

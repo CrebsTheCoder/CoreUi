@@ -23,7 +23,7 @@ public class BitmapUnicodeProvider extends AbstractUnicodeProvider {
 
 
     /**
-     * Refer to https://minecraft.wiki/w/Resource_pack#Fonts for more info
+     * Refer to https://minecraft.wiki/w/Font_definition for more info
      */
     @JsonIgnore
     public BitmapUnicodeProvider(char unicodeChar, String namespacedTexturePath, double ascent, double height){

@@ -14,7 +14,7 @@ public class SpaceUnicodeProvider extends AbstractUnicodeProvider {
 
 
     /**
-     * Refer to https://minecraft.wiki/w/Resource_pack#Fonts for more info
+     * Refer to https://minecraft.wiki/w/Font_definition for more info
      * must be before chars definition, or it will not work
      */
     @JsonIgnore
