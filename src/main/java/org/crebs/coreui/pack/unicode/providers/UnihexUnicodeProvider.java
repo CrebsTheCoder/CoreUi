@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.crebs.coreui.pack.unicode.AbstractUnicodeProvider;
 import org.crebs.coreui.pack.unicode.UnicodeType;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
@@ -42,6 +43,10 @@ public class UnihexUnicodeProvider extends AbstractUnicodeProvider {
     }
 
 
+    @Override
+    public @NotNull String getFilePath() {
+        return "";
+    }
 }
 
 

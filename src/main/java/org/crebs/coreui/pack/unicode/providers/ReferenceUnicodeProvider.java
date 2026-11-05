@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.crebs.coreui.pack.unicode.AbstractUnicodeProvider;
 import org.crebs.coreui.pack.unicode.UnicodeType;
+import org.jetbrains.annotations.NotNull;
 
 public class ReferenceUnicodeProvider extends AbstractUnicodeProvider {
     @JsonProperty("id")
@@ -21,5 +22,10 @@ public class ReferenceUnicodeProvider extends AbstractUnicodeProvider {
     @Override
     public String getStringType() {
         return "reference";
+    }
+
+    @Override
+    public @NotNull String getFilePath() {
+        return "";
     }
 }

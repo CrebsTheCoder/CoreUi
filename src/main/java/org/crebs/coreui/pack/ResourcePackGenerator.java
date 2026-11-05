@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import net.outmoded.packer.ResourcePack;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.crebs.coreui.glyph.Glyph;
+import org.crebs.coreui.pack.unicode.UnicodeFileRegister;
 
 import javax.imageio.ImageIO;
 import java.io.*;
@@ -49,6 +50,9 @@ public final class ResourcePackGenerator {
                 }
             }
         }
+
+
+        //TODO: kill this code
         Map<String, Glyph> loaded = new TreeMap<>();
         Gson gson = new Gson();
         try (var files = Files.walk(input)) {

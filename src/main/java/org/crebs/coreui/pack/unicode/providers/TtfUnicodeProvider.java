@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.crebs.coreui.pack.unicode.AbstractUnicodeProvider;
 import org.crebs.coreui.pack.unicode.UnicodeType;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
@@ -29,7 +30,7 @@ public class TtfUnicodeProvider extends AbstractUnicodeProvider {
 
 
     /**
-     * Refer to https://minecraft.wiki/w/Resource_pack#Fonts for more info
+     * Refer to https://minecraft.wiki/w/Font_definition for more info
      */
     public TtfUnicodeProvider(char unicodeChar, String namespacedTexturePath ,double size, double oversample){
         super(UnicodeType.TTF);
@@ -58,5 +59,10 @@ public class TtfUnicodeProvider extends AbstractUnicodeProvider {
     @Override
     public String getStringType() {
         return "ttf";
+    }
+
+    @Override
+    public @NotNull String getFilePath() {
+        return "";
     }
 }

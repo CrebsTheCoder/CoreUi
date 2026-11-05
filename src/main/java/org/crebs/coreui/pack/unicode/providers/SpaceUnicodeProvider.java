@@ -32,4 +32,9 @@ public class SpaceUnicodeProvider extends AbstractUnicodeProvider {
     public String getStringType() {
         return "space";
     }
+
+    @Override
+    public @NotNull String getFilePath() {
+        return "";
+    }
 }

@@ -1,6 +1,7 @@
 package org.crebs.coreui.pack.unicode.providers;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.crebs.coreui.pack.unicode.AbstractUnicodeProvider;
 
 public record UnihexSizeOverrides(
         @JsonProperty("from") String from,
