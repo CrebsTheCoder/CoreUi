@@ -1,0 +1,3 @@
+pack:
+  # Relative to plugins/CoreUi. Absolute paths are also accepted.
+  output-directory: Pack
